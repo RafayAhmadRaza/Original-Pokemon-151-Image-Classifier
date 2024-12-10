@@ -25,7 +25,7 @@ Student Email: rafayahmadraza@gmail.com
 - Visual Studio Code
 - [Streamlit](https://streamlit.io)
 ## Demonstration
-
+https://github.com/RafayAhmadRaza/Original-Pokemon-151-Image-Classifier/blob/main/demo.gif
 ## Dataset
 
  - [Dataset Used: pokemon-generation-one-22k](https://www.kaggle.com/datasets/bhawks/pokemon-generation-one-22k)
