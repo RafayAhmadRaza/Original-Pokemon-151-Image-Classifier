@@ -13,7 +13,7 @@ df.columns = df.columns.str.strip()
 df['Names'] = df['Names'].str.strip()
 modelDict = {"Best Model":"models/my_model11.keras","Second Best":"models/my_model3.keras","Worst":"models/my_model.keras"}
 def main():
-    st.title('🔴Pokemon Generation 1 Classifier⚪')
+    st.title('🔴 Pokemon Generation 1 Classifier ⚪')
     st.write('Upload any image of the original 151 pokemons')
     modelType = st.selectbox("Models",["Best Model","Second Best","Worst"])
     modelName = modelDict[modelType]
