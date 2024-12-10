@@ -1,7 +1,7 @@
 
 # 151 GEN1 Pokemon Image Classifier
 
-This project is being developed as part of the Artificial Intelligence course (CS-314) at my university. 
+This project is being developed as part of the Artificial Intelligence course (CS-314) at my the national skills university, Islamabad Pakistan. 
 
 
 It is authored by Rafay Ahmad Raza, Roll Number: F22BSCS041.
@@ -24,7 +24,8 @@ Student Email: rafayahmadraza@gmail.com
 - Keras==3.3.3
 - Visual Studio Code
 - [Streamlit](https://streamlit.io)
-## Video Demonstration
+## Demonstration
+
 ## Dataset
 
  - [Dataset Used: pokemon-generation-one-22k](https://www.kaggle.com/datasets/bhawks/pokemon-generation-one-22k)
