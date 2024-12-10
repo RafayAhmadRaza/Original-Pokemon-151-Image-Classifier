@@ -2,7 +2,13 @@
 # 151 GEN1 Pokemon Image Classifier
 
 This project is being developed as part of the Artificial Intelligence course (CS-314) at my university. 
+
+
 It is authored by Rafay Ahmad Raza, Roll Number: F22BSCS041.
+
+
+
+
 Student Email: rafayahmadraza@gmail.com
 
 
