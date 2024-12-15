@@ -23,11 +23,13 @@ def main():
 
     if file:
         image = Image.open(file)
-        image = cv2.imread(image)
         st.image(image,use_column_width=True)
-        if len(image.shape)>2 and image.shape[2] == 4:
+        if image.mode == "RGBA":
+
+            image = cv2.cvtColor(image,cv2.COLOR_RGBA2BGRA)
 
             image = cv2.cvtColor(image,cv2.COLOR_BGRA2RGB)
+            
         resized_image = image.resize((256,256))
         img_array=np.array(resized_image)/255
 
