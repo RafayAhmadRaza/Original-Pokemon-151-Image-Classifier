@@ -24,25 +24,24 @@ def main():
     if file:
         image = Image.open(file)
         st.image(image,use_column_width=True)
-        resized_image = image.resize((256,256))
-        img_array=(np.array(resized_image)/255).astype(np.float32)
+        
 
 
         if image.mode == "RGBA":
 
-            background = Image.new("RGB",image.size,(255,255,255))
+            background = Image.new("RGBA",image.size,(255,255,255))
 
             image = Image.alpha_composite(background,image)
             
-            img_array=(np.array(resized_image)/255).astype(np.float32)
+        image = image.convert("RGB")
+        resized_image = image.resize((256,256))
+        img_array=(np.array(resized_image)/255)
 
-            img_cv = (img_array*255).astype(np.uint8)
 
-            img_array = cv2.cvtColor(img_cv,cv2.COLOR_RGBA2BGRA)
 
-            img_array = cv2.cvtColor(img_array,cv2.COLOR_BGRA2RGB)
 
-        st.image(img_array,use_column_width=True)
+
+
 
 
         img_array = img_array.reshape(1,256,256,3)
