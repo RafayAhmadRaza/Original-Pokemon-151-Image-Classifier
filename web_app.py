@@ -26,7 +26,7 @@ def main():
         resized_image = image.resize((256,256))
         img_array=np.array(resized_image)/255
 
-        img_array = img_array.reshape(1,256,256,3)
+        img_array = img_array.reshape(1,256,256,4)
 
         if st.button("Predict"):    
             gif_placeholder = st.empty()
