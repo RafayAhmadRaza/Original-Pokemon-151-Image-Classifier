@@ -35,6 +35,7 @@ def main():
 
             img_array = cv2.cvtColor(img_array,cv2.COLOR_BGRA2RGB)
 
+        st.image(img_array,use_column_width=True)
 
 
         img_array = img_array.reshape(1,256,256,3)
