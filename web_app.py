@@ -23,6 +23,7 @@ def main():
 
     if file:
         image = Image.open(file)
+        image = cv2.imread(image)
         st.image(image,use_column_width=True)
         if len(image.shape)>2 and image.shape[2] == 4:
 
