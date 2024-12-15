@@ -26,11 +26,12 @@ def main():
         st.image(image,use_column_width=True)
         resized_image = image.resize((256,256))
         img_array=np.array(resized_image)/255
+
         if image.mode == "RGBA":
 
-            image = cv2.cvtColor(image,cv2.COLOR_RGBA2BGRA)
+            img_array = cv2.cvtColor(img_array,cv2.COLOR_RGBA2BGRA)
 
-            image = cv2.cvtColor(image,cv2.COLOR_BGRA2RGB)
+            img_array = cv2.cvtColor(img_array,cv2.COLOR_BGRA2RGB)
 
 
 
