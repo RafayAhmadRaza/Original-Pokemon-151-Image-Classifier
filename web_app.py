@@ -24,14 +24,15 @@ def main():
     if file:
         image = Image.open(file)
         st.image(image,use_column_width=True)
+        resized_image = image.resize((256,256))
+        img_array=np.array(resized_image)/255
         if image.mode == "RGBA":
 
             image = cv2.cvtColor(image,cv2.COLOR_RGBA2BGRA)
 
             image = cv2.cvtColor(image,cv2.COLOR_BGRA2RGB)
-            
-        resized_image = image.resize((256,256))
-        img_array=np.array(resized_image)/255
+
+
 
         img_array = img_array.reshape(1,256,256,3)
 
