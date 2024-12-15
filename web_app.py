@@ -27,9 +27,16 @@ def main():
         resized_image = image.resize((256,256))
         img_array=(np.array(resized_image)/255).astype(np.float32)
 
-        img_cv = (img_array*255).astype(np.uint8)
 
         if image.mode == "RGBA":
+
+            background = Image.new("RGB",image.size,(255,255,255))
+
+            image = Image.alpha_composite(background,image)
+            
+            img_array=(np.array(resized_image)/255).astype(np.float32)
+
+            img_cv = (img_array*255).astype(np.uint8)
 
             img_array = cv2.cvtColor(img_cv,cv2.COLOR_RGBA2BGRA)
 
