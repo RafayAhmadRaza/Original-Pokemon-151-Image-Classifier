@@ -12,7 +12,7 @@ gif_url = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/029b8bd9-cb
 df = pd.read_csv("PokemonFacts/PokemonFacts.csv")
 df.columns = df.columns.str.strip()
 df['Names'] = df['Names'].str.strip()
-modelDict = {"Best Model":"models/my_model11.keras","Second Best":"models/my_model3.keras","Worst":"models/my_model.keras"}
+modelDict = {"Best Model":"models/my_model11.keras","Best Model Two":"models/my_model12.keras","Second Best":"models/my_model3.keras","Worst":"models/my_model.keras"}
 def main():
     st.title('Pokemon Generation 1 Classifier')
     st.write('Upload any image of the original 151 pokemons')
@@ -74,7 +74,7 @@ def main():
                 'Pidgeot', 'Machop', 'Moltres', 'Scyther', 'MrMime', 'Cubone', 'Gengar', 'Kingler', 'Dugtrio', 'Gloom', 
                 'Parasect', 'Persian', 'Golem', 'Seadra', 'Squirtle', 'Nidorino', 'Charmander', 'Jynx', 'Dragonair', 
                 'Arbok', 'Weedle', 'Pidgey', 'Kadabra', 'Rhyhorn', 'Weepinbell', 'Charmeleon', 'Staryu', 'Voltorb', 
-                'Slowbro', 'Vulpix']
+                'Slowbro', 'Vulpix',"No Pokemon"]
 
                 
             PokemonArray.sort()
