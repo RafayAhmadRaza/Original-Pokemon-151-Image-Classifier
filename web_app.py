@@ -16,7 +16,7 @@ modelDict = {"Best Model":"models/my_model11.keras","Best Model Two":"models/my_
 def main():
     st.title('Pokemon Generation 1 Classifier')
     st.write('Upload any image of the original 151 pokemons')
-    modelType = st.selectbox("Models",["Best Model","Second Best","Worst"])
+    modelType = st.selectbox("Models",["Best Model","Best Model Two","Second Best","Worst"])
     modelName = modelDict[modelType]
     file= st.file_uploader('Please upload an image',type=['jpg','png','jpeg'])
     
